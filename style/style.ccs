@@ -1,0 +1,516 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+:root {
+    --clr-nav-item: #191b19;
+    --clr-nav-item-hover: rgb(106, 204, 106);
+    --clr-header: rgba(219, 211, 211, 0.85)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../img/background-image.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Montserrat, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 30px;
+    box-shadow: 0 1px 8px #454640;
+    border-radius: 15px;
+    background-color: var(--clr-header);
+    z-index: 1;
+}
+
+.nav-title {
+    margin-right: auto;
+    font-size: 1em;
+    text-decoration: none;
+    color:var(--clr-nav-item)
+}
+
+.nav-item, .nav-item-primary {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--clr-nav-item);
+    transition: all 0.3s ease 0s;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: var(--clr-nav-item-hover);
+    cursor: pointer;
+}
+
+.nav-item-primary a {
+    text-decoration: none;
+    color: var(--clr-nav-item);
+    transition: all 0.3s ease 0s;
+    background-color: rgb(106, 204, 106);
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.nav-item-primary a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.nav #menu, .nav #close {
+    display: none;
+ }
+
+ .intro {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+ }
+
+ .intro-main {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+ }
+
+ .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+ }
+
+ .intro-section-1 {
+    display: flex;
+    width: 100%;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    opacity: 0.7;
+ }
+
+ .intro-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+ }
+
+ .intro-section-2 .trust {
+    font-size: 1.4rem;
+    padding-bottom: 15px;;
+ }
+
+ .intro-section-2 .telephone-number, .intro-section-2 .email-label {
+    font-size: 1.7rem;
+    opacity: 0.65;
+ }
+
+.price-btn {
+    display: flex;
+    background-color: var(--clr-nav-item-hover);
+    height: 7vh;
+    width: 35vh;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 8px #454640;
+}
+
+.price-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.price-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.services {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 1px 8px #454640;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.services-row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    text-align: center;
+    border-radius: 40px;
+    height: auto;
+    width: auto;
+}
+
+.service p {
+    width: 35vh;
+}
+
+.service i, .service h3, .service p {
+    padding: 5px;
+    margin: 10px;
+}
+
+.service i {
+    font-size: 4em;
+    color: black;
+    opacity: 0.85;
+}
+
+.services-label-1, .services-label-2 {
+    padding: 8px;
+    text-align: center;
+}
+
+.services-label-1 {
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: .8;
+}
+
+.services-label-2 {
+    font-size: 1.2rem;
+    opacity: .8;
+    font-style: italic;
+}
+
+.service h3, .service p {
+    margin: 10px;
+}
+
+.contact {
+    display: flex;
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    width: auto;
+    height: auto;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.contact-left-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.contact-left-top .label {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.contact-left-top i {
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-left-bottom {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+}
+
+.contact-left-bottom-left, .contact-left-bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+}
+
+.contact-left-bottom-right {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: auto;
+}
+
+.contact-left-bottom-right .dates {
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    font-weight: 550;
+    opacity: .75;
+}
+
+.contact-left-bottom-right .dates .day {
+    text-align: left;
+    width: 100%;
+}
+
+.contact-left-bottom-right .dates , .contact-left-bottom-left .contact-left-text {
+    padding: 5px;
+}
+
+.contact-right {
+    width: 55%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-forms .contact-form {
+    padding: 10px;
+}
+
+.contact-right .fullname {
+    display: inline-block;
+    width: 50%;
+}
+
+.contact-right .email-telephone-number {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-right .email-telephone-number .email, .contact-right .email-telephone-number .telephone-number {
+    display: inline-block;
+    width: 48%;
+}
+
+.contact-right .fullname input, .contact-right .email-telephone-number input {
+    width: 100%;
+}
+
+.contact-right .message {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.contact .message textarea {
+    height: 20vh;
+    width: auto;
+}
+
+.contact-right form label {
+    font-size: 1.2rem;
+}
+
+.contact-right form input, .contact-right form textarea {
+    padding: 10px;
+    border: var(--clr-nav-item-hover);
+    border-radius: 10px;
+    opacity: .75;
+}
+
+.contact-form.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-btn {
+    display: flex;
+    background-color: var(--clr-nav-item-hover);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.6rem;
+    padding: 10px;
+    box-shadow: 0 1px 8px #191b19;
+    text-align: center;
+    height: 5vh;
+    width: 25vh;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    box-shadow: 0 1px 8px #454640;
+    border-radius: 15px;
+    margin: 10px;
+    margin-top: 20px;
+    height: 50vh;
+}
+
+.footer-main {
+    display: flex;
+    background-color: red;
+    width: 100%;
+}
+
+.footers {
+    border-radius: 30px;
+}
+
+.footer-left {
+    background-color: yellow;
+    width: 33%;
+}
+
+@media(max-width: 984px) {
+    body {
+        background-position: 5%;
+    }
+
+    .nav-title, i, .nav-item a , .nav-item-primary a{
+        font-size: 1em;
+    }
+
+    .nav-list {
+        position: absolute;
+        background-color: var(--clr-header);
+        box-shadow: 0 1px 8px #ddd;
+        top: 55px;
+        right: 20000px;
+        height: auto;
+        width: 200px;
+        margin: 0px;
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        text-align: right;
+        transition: 0.1s;
+    }
+
+    .nav-list li{
+        padding: 10px;
+    }
+
+    .fa-xmark {
+        font-size: 1.3rem;
+    }
+
+    .nav #menu {
+        display: block;
+        color: black;
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+    }
+
+    .intro-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .intro-right {
+        width: 100%;
+        height: 55vh;
+    }
+
+    .intro-section-1 {
+        font-size: 1.8rem;
+    }
+
+    .intro-section-2 .telephone-number, .intro-section-2 .trust, .intro-section-2 .email-label {
+        font-size: 1.2rem;
+    }
+
+    .services-row {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .contact-left, .contact-right {
+        border-radius: 30px;
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-left h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-left-bottom {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .contact-left-bottom-left, .contact-left-bottom-right {
+        margin: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-left-bottom-right .dates {
+        width: 50%;
+    }
+
+    .contact-right .email-telephone-number{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-right .email-telephone-number .email {
+        padding-bottom: 20px;
+    }
+
+    .contact-right .fullname, .contact-right .email-telephone-number .email, .contact-right .email-telephone-number .telephone-number {
+        width: 100%;
+    }
+}
