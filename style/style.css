@@ -443,6 +443,9 @@ body {
     display: flex;
     border-radius: 15px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-left, .footer-middle, .footer-right {
