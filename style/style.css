@@ -166,6 +166,7 @@ body {
 }
 
 .services {
+    scroll-margin: 100px 0 0 50px;
     padding: 20px;
     width: auto;
     height: auto;
@@ -227,9 +228,9 @@ body {
 }
 
 .contact {
+    scroll-margin: 125px 0 0 50px;
     display: flex;
-    margin: 10px;
-    margin-top: 50px;
+    margin: 75px;
     margin-left: 150px;
     margin-right: 150px;
     width: auto;
@@ -292,7 +293,12 @@ body {
 
 .contact-left-bottom-right .dates .day {
     text-align: left;
-    width: 100%;
+    width: 70%;
+}
+
+.contact-left-bottom-right .dates .time {
+    text-align: left;
+    width: 30%;
 }
 
 .contact-left-bottom-right .dates , .contact-left-bottom-left .contact-left-text {
@@ -381,28 +387,150 @@ body {
     text-decoration: none;
 }
 
-.footer {
+.works {
+    scroll-margin: 100px 0 0 50px;
     display: flex;
+    flex-direction: column;
     box-shadow: 0 1px 8px #454640;
     border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.works-text {
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: .8;
+    text-align: center;
+    padding: 8px;
+}
+
+.works .works-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picture img {
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+    width: 320px;
+    height: 400px;
+    box-shadow: 0px 0px 0px 1.5px #454640;; 
+}
+
+.picture img:hover {
+    transform: scale(1.05);
+}
+
+
+.footer {
+    display: flex;
+    background-color: rgba(229, 227, 228, 0.8);
+    box-shadow: 0 1px 8px #454640;
     margin: 10px;
     margin-top: 20px;
-    height: 50vh;
+    height: auto;
 }
 
 .footer-main {
     display: flex;
-    background-color: red;
+    border-radius: 15px;
     width: 100%;
 }
 
-.footers {
-    border-radius: 30px;
+.footer-left, .footer-middle, .footer-right {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.footer-left {
-    background-color: yellow;
-    width: 33%;
+.footer-middle-list {
+    display: flex;
+    list-style: none;
+    margin: 0 .5em;
+    padding: 10px;
+}
+
+.footer-middle-list__item {
+    margin: 0 .5em;
+}
+
+.footer-middle-list__link {
+    padding: .5em;
+}
+
+.footer-middle-list__link i {
+    font-size: 1.5rem;
+    color: black;
+    opacity: .9;
+}
+
+.footer-right .copyright {
+    font-size: 1.1rem;
+}
+
+.footer-right .privacy {
+    display: flex;
+    margin: 5px;
+}
+
+.footer-right .privacy p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.footer-right .privacy p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.adatvedelem {
+    display: none;
+    position: fixed;
+    margin: 10px;
+    height: auto;
+    width: auto;
+    background-color: rgba(229, 227, 228, 1);
+    box-shadow: 0 1px 8px #454640;
+    top: 70px;
+    left: 25px;
+    right: 25px;
+}
+
+.adatvedelem-text {
+    display: flex;
+    font-size: 2rem;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.adatvedelem-text p {
+    width: 100%;
+}
+
+.adatvedelem-text div {
+    width: 2%;
+}
+
+.adatvedelem li {
+    padding: 10px;
+    list-style: none;
+}
+
+.adatvedelem-text div i:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 @media(max-width: 984px) {
@@ -417,7 +545,7 @@ body {
     .nav-list {
         position: absolute;
         background-color: var(--clr-header);
-        box-shadow: 0 1px 8px #ddd;
+        box-shadow: 0 1px 8px #454640;
         top: 55px;
         right: 20000px;
         height: auto;
@@ -473,6 +601,8 @@ body {
     .contact {
         flex-direction: column;
         margin: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .contact-left, .contact-right {
@@ -497,8 +627,9 @@ body {
         align-items: center;
     }
 
-    .contact-left-bottom-right .dates {
+    .contact-left-bottom-right .dates .day, .contact-left-bottom-right .dates .time {
         width: 50%;
+        text-align: center;
     }
 
     .contact-right .email-telephone-number{
@@ -512,5 +643,9 @@ body {
 
     .contact-right .fullname, .contact-right .email-telephone-number .email, .contact-right .email-telephone-number .telephone-number {
         width: 100%;
+    }
+
+    .footer-main {
+        flex-direction: column;
     }
 }
