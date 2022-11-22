@@ -21,9 +21,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: Montserrat, sans-serif;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
 }
 
 .header {
@@ -542,7 +542,7 @@ body {
 @media(max-width: 984px) {
     body {
         background-position: 5%;
-        background-size: 100% 100%;
+        background-size: contain;
     }
 
     .nav-title, i, .nav-item a , .nav-item-primary a{
