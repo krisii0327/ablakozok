@@ -21,9 +21,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: Montserrat, sans-serif;
-    -webkit-background-size: fixed;
-    -moz-background-size: fixed;
-    -o-background-size: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .header {
