@@ -24,7 +24,6 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover !important;
 }
 
 .header {
@@ -544,10 +543,6 @@ body {
     body {
         background-position: 5%;
         background-size: 100% 100%;
-        -webkit-background-size: fixed;
-        -moz-background-size: fixed;
-        -o-background-size: fixed;
-        
     }
 
     .nav-title, i, .nav-item a , .nav-item-primary a{
