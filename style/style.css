@@ -543,7 +543,11 @@ body {
 @media(max-width: 984px) {
     body {
         background-position: 5%;
-        background-size: fixed;
+        background-size: 100% 100%;
+        -webkit-background-size: fixed;
+        -moz-background-size: fixed;
+        -o-background-size: fixed;
+        
     }
 
     .nav-title, i, .nav-item a , .nav-item-primary a{
