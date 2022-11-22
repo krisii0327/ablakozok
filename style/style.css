@@ -543,6 +543,7 @@ body {
 @media(max-width: 984px) {
     body {
         background-position: 5%;
+        background-size: fixed;
     }
 
     .nav-title, i, .nav-item a , .nav-item-primary a{
